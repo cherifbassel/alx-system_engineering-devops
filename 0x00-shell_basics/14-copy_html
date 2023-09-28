@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -newer ../ -exec cp {} ../ \;
+find . -name "*.HTML" -exec rsync -u --ignore-existing --relative {} ../ \;
