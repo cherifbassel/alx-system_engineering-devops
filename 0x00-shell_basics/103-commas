@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -maxdepth 1 -exec printf "%s, " {} \; | sort -d | sed 's/\.$/\//;s/,$/\n/'
